@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='estilos.css')}}">
+   
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+ 
+</head>
+
+<body>
+    <h1> EJERCICIO DEPLOY </h1>
+    <h2>BIENVENIDO</h1><br>
+        <div>
+            <h1>En esta pagina vamos a realizar contador y galeria</h1><br>
+            <p>Veces que el administrador ha entrado en la pagina: {{ count }} .</p>
+        </div>
+        
+         <div>
+             <p>Hoy es: {{ the_time }}.</p>
+             <img src="http://loremflickr.com/600/400/{{tema}}"  width="600" height="400"/>
+         </div>
+        
+
+
+</body>
+
+</html>
