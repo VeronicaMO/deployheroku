@@ -15,18 +15,17 @@ def index():
     f.close()
 
     # Increment the count
-    count += 1 
+    count += 1
 
     # Overwrite the count
     f = open("count.txt", "w")
     f.write(str(count))
     f.close()
 
-
     the_time = datetime.now().strftime("%A, %d %b %Y %H:%M")
     # Render HTML with variable
     return render_template("index.html", the_time=the_time, tema="dogs", count=count)
 
-   
+
 if __name__ == "__main__":
     app.run()
