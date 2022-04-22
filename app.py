@@ -15,7 +15,8 @@ def index():
     f.close()
 
     # Increment the count
-    count += 1
+    # count += 1 cambiado!!
+    count 
 
     # Overwrite the count
     f = open("count.txt", "w")
